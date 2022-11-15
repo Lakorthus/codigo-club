@@ -4,6 +4,9 @@ function FistComponent() {
   return (
     <>
       <Card> primer component</Card>
+      <div>
+        
+      </div>
     </>
   );
 }
