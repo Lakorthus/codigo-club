@@ -1,10 +1,12 @@
 
 import './App.css';
-import FistComponent from './components/firstcomponent';
+import Main from './components/Main/Main.js';
 export default function App() {
   return (
     <>
-    <FistComponent/>
+      <Main>
+        <h1>Blog</h1>
+      </Main>
     
     </>
   );
