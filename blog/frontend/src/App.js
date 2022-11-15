@@ -1,12 +1,15 @@
 
 import './App.css';
-import FistComponent from './components/firstcomponent';
 import Cards from './components/cards/cards';
+import Main from './components/Main/Main.js';
+
 export default function App() {
   return (
     <>
-    <FistComponent/>
-    
+      <Main>
+      <NavBar />
+        <h1>Blog</h1>
+      </Main>
     </>
   );
 }
