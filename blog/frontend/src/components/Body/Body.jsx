@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 
 export default function Body(props) {
   return (
-    <div className="container row p-5 ">
+    <div className="row d-flex justify-content-between">
       <div className="col-8">
         <Card />
       </div>
