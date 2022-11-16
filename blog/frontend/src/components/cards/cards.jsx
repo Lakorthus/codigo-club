@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/Card";
+
 var User = "Ferreira91";
 var info = {
   User: "Ferreira91",
@@ -9,7 +9,7 @@ var info = {
 };
 export default function Cards(props) {
   return (
-    <div className="container row p-5 " style={{ maxWidth: "75%" }}>
+    <div className="container row p-5 " style={{ maxWidth: "375px", maxHeigth : "100vh" , position : 'sticky'}}>
       <a
         href="localhost:3000"
         style={{ textDecoration: "none", color: "black" }}
