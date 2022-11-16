@@ -1,14 +1,15 @@
-
 import './App.css';
-import Cards from './components/cards/cards';
-import Main from './components/Main/Main.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './components/Main/Main';
+import NavBar from './components/NavBar/NavBar';
+import Cards from './components/Cards/Cards';
 
 export default function App() {
   return (
     <>
       <Main>
       <NavBar />
-        <h1>Blog</h1>
+      <Cards />
       </Main>
     </>
   );
