@@ -5,19 +5,13 @@ function NavBar() {
     // Simple Navbar with a circular logo on the left and a menu icon on the right
     // The menu icon will be used to toggle the sidebar
     <nav 
-      className="navbar navbar-expand-lg navbar-dark"
-      style={
-        {
-          backgroundColor: "#003566"
-        }
-      }
+      className="navbar navbar-expand-lg navbar-dark d-flex justify-space-between px-4"
+      style={{ backgroundColor: "#003566" }}
     >
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="localhost:3000">
         <img
-          src="https://www.flaticon.com/svg/static/icons/svg/25/25694.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
+          src={require("../../components/images/logo_icon.png")}
+          className="d-inline-block align-top w-50 h-50"
           alt=""
         />
       </a>
@@ -35,23 +29,8 @@ function NavBar() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="localhost:3000">
               Home <span className="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Features
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Pricing
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#">
-              Disabled
             </a>
           </li>
         </ul>
