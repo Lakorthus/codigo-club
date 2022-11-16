@@ -1,15 +1,20 @@
-import React from 'react'
+import React from "react";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className='card' id='card'>
-        <span id='card__author'>Author</span>
-        <span id='card__date'></span>
-        <img id='card__img'alt='card'/>
-        <h1 id='card__title'>Title Card</h1>
-        <p id='card__text'>Card text</p>
-        </div>
-  )
-}
+    <div className="container row p-5 ">
+      <div className="post1 card pl-30 p-2 d-flex ">
+        <div className="d-flex justify-content-between">
+          <p>{props.author}</p>
 
-export default Card
+          <p>{props.date}</p>
+        </div>
+        <img className="card-img-top" src={props.src} alt={props.author}/>
+        <div className="text">{props.title}</div>
+        <p className="text">{props.text}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
