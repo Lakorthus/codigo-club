@@ -10,16 +10,16 @@ var info = {
 };
 export default function Card(props) {
   return (
-    <div className="container row p-5 " style={{ maxWidth: "850px", maxHeigth : "100vh" , position : 'sticky'}}>
+    <div className="container row p-5 " style={{ width: "100%", maxHeigth: "100vh"}}>
       <a
         href="localhost:3000"
         style={{ textDecoration: "none", color: "black" }}
       >
-        <div className="post1 card pl-30 p-2 d-flex ">
+        <div className="post1 card pl-30 p-2 d-flex" style={{ gap: "5px"}}>
           <div className="text">{info.Title}</div>
           <img
             className="card-img-top"
-            style={{ maxHeight: "375px", maxWidth: "768px" }}
+            style={{ maxHeight: "375px", maxWidth: "100%" }}
             src={info.Image}
             alt=""
           />
@@ -28,7 +28,7 @@ export default function Card(props) {
 
             <p>{info.Date}</p>
           </div>
-          <div className="text">{info.Text}</div>
+          <div className="text" style={{ textAlign: "justify"}}>{info.Text}</div>
         </div>
 
         {/* <Card/> */}
