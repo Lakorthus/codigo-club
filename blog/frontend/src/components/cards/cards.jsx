@@ -9,10 +9,12 @@ var info = {
 };
 export default function Cards(props) {
   return (
+
     <div className="container row p-5 ">
       <div className="post1 card pl-30 p-2 d-flex ">
         <div className="d-flex">
         <p>{info.User}</p>
+
 
         <p>{info.Date}</p>
         </div>
