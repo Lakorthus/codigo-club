@@ -1,12 +1,9 @@
-import Card from 'react-bootstrap/Button';
+import React from 'react'
 
-function Cards() {
-    return ( <>
-    <Card>
-
-    </Card>
-    </> );
+const Cards = () => {
+  return (
+    <div>cards</div>
+  )
 }
 
-;
-export default Cards;
+export default Cards
