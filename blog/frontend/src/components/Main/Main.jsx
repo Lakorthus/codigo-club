@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = (props) => {
   return (
-    <div>{props.children}</div>
+    <div style={{ backgroundColor: "#003566" }}>{props.children}</div>
   )
 }
 
