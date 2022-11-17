@@ -27,7 +27,7 @@ let blogPosts = [
 
 export default function Cards() {
   return (
-    <div className="row row-cols-1 row-cols-md-2 g-1 p">
+    <div className="row row-cols-1 row-cols-md-2 g-1">
       {blogPosts.map((post,index) => {
         return (
           <Card
