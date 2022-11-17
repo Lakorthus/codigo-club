@@ -1,11 +1,13 @@
 import React from "react";
 
-const Card = (props) => {
+export default function Card  (props) {
   return (
     <div className="container ps-3 pe-3 pb-1 pt-4">
-      <div className="card d-flex" 
+      <div className="card"
+      style={{backgroundColor: '#E9ECEF'}} 
 >
-          <div className="d-flex ms-1 me-1 justify-content-between p-2">
+          <div className="d-flex ms-1 me-1 justify-content-between p-2"
+               >
           <p>{props.author}</p>
 
           <p>{props.date}</p>
@@ -17,13 +19,13 @@ const Card = (props) => {
                     }} 
                     src={props.src} 
                     alt={props.author}/>
-                 
-        <p className="text">{props.title}</p>
+                 <div className="ms-2 pt-2">
+        <h2 className="text">{props.title}</h2>
         <p className="text">{props.text}</p>
-
+        </div>
       </div>
     </div>
   );
 };
 
-export default Card;  
+
