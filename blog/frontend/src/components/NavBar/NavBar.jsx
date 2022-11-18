@@ -4,10 +4,7 @@ import SearchBar from "../SearchBar/SearchBar";
 function NavBar() {
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark d-flex justify-space-between px-4"
-        style={{ backgroundColor: "#003566" }}
-      >
+      <nav className="navbar navbar-expand-lg navbar-dark d-flex justify-space-between px-4">
         <a className="navbar-brand" href="localhost:3000">
           <img
             src={require("../../components/images/logo_icon.png")}
