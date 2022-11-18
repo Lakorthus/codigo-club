@@ -9,7 +9,7 @@ export default function Body(props) {
       <div className="col-8">
         <Card {...data[0]}/>
       </div>
-      <div className="col-12 col-sm-12 col-md-4 col-lg-4">
+      <div className="scrollCards col-12 col-sm-12 col-md-4 col-lg-4">
         <Cards />
       </div>
       

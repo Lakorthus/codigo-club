@@ -3,7 +3,7 @@ import React from 'react'
 function SearchBar() {
   return (
     // Creating a search bar for the user to search for a specific blog post
-    <div className="container">
+    <div className="container mb-3">
         <div className="row">
             <div className="col-12">
                 <div className="input-group">
