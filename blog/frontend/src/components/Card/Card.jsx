@@ -1,24 +1,21 @@
 import React from "react";
+import "./Card.css";
 
 const Card = (props) => {
   return (
-    <div className="container ps-3 pe-3 pb-1 pt-4">
-      <div className="card d-flex">
-        <div className="d-flex ms-1 me-1 justify-content-between p-2">
+    
+      <div class="card mb-4">
+        <img className="card-img-top" src={props.src} alt={props.author} />
+        <div className="card-body">
+          <h5 class="card-title">{props.title}</h5>
           <p>{props.author}</p>
-
-          <p>{props.date}</p>
+          <p className="card-text">{props.text}</p>
+          <p class="card-text">
+            <small class="text-muted">{props.date}</small>
+          </p>
         </div>
-        <img
-          className="img-fluid"
-          src={props.src}
-          alt={props.author}
-        />
-
-        <p className="text">{props.title}</p>
-        <p className="text">{props.text}</p>
       </div>
-    </div>
+    
   );
 };
 
