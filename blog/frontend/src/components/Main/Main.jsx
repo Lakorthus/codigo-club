@@ -1,8 +1,9 @@
 import React from 'react'
+import './Main.css'
 
 const Main = (props) => {
   return (
-    <div style={{ backgroundColor: "#003566" }}>{props.children}</div>
+    <div className='main container'>{props.children}</div>
   )
 }
 
