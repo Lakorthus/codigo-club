@@ -9,11 +9,20 @@
     max-height: 250px;
   }
 }
-/* tablets
+/* tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main-card {
-    width: 400px;
-    height: 80vh;
-    background-color: aliceblue;
+  .style-main-img {
+    /* width: 100%; */
+    height: 550px;
   }
-} */
+}
+/* desktop */
+@media (min-width: 1024px) {
+  .style-main-img {
+    height: 550px;
+  }
+  .main-card {
+    width: 60%;
+    height: 80vh;
+  }
+}
