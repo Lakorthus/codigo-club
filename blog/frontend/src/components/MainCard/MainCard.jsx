@@ -1,11 +1,11 @@
-import React from "react";
-import "./Card.css";
+import React from 'react'
+import './MainCard.css'
 
-const Card = (props) => {
+
+const MainCard = (props) => {
   return (
-    
-      <div class="card mb-4 ">
-        <img className="card-img-top style-card-img" src={props.src} alt={props.author} />
+    <div class="card">
+        <img className="card-img-top style-main-img" src={props.src} alt={props.author} />
         <div className="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p>{props.author}</p>
@@ -15,8 +15,7 @@ const Card = (props) => {
           </p>
         </div>
       </div>
-    
-  );
-};
+  )
+}
 
-export default Card;
+export default MainCard
