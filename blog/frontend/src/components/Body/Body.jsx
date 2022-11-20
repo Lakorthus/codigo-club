@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "../Cards/Cards";
 import { data } from "../../db/data";
 import MainCard from "../MainCard/MainCard";
+import './Body.css'
 
 export default function Body(props) {
   return (

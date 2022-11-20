@@ -1,5 +1,19 @@
-.main-card {
+/* .main-card {
   width: 60%;
   height: 80vh;
   background-color: aliceblue;
+} */
+/* mobile */
+@media (max-width: 768px) {
+  .style-main-img {
+    max-height: 250px;
+  }
 }
+/* tablets
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-card {
+    width: 400px;
+    height: 80vh;
+    background-color: aliceblue;
+  }
+} */

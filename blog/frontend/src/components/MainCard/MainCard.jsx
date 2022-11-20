@@ -5,7 +5,7 @@ import './MainCard.css'
 const MainCard = (props) => {
   return (
     <div class="card">
-        <img className="card-img-top" src={props.src} alt={props.author} />
+        <img className="card-img-top style-main-img" src={props.src} alt={props.author} />
         <div className="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p>{props.author}</p>
