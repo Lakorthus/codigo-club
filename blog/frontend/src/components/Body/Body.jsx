@@ -11,7 +11,7 @@ export default function Body(props) {
       <div className="main-card pb-4">
         <MainCard {...data[0]}/>
       </div>
-      <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+      <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
         <Cards />
       </div>
 
