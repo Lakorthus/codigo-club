@@ -12,15 +12,20 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
+import os
+from dotenv import load_dotenv
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-xz-_rsxms6t817)u4u!(t!)$lkn!!9tk%g2@0gg310x!&z(c6*'
+# SECRET_KEY = 'django-insecure-xz-_rsxms6t817)u4u!(t!)$lkn!!9tk%g2@0gg310x!&z(c6*'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,12 +80,23 @@ WSGI_APPLICATION = 'codigo_club.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ['NAME_DB'],
+        'USER': os.environ['USER_DB'],
+        'PASSWORD': os.environ['PASSWORD_DB'],
+        'HOST': os.environ['HOST_DB'],
+        'PORT': os.environ['PORT_DB'],
     }
 }
+
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation
