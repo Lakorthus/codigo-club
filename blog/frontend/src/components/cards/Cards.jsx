@@ -20,7 +20,7 @@ export default function Cards() {
           <Card
             key={index}
             author={post.author}
-            date={post.date}
+            date={post.created_on}
             title={post.title}
             src={post.post_picture_0}
             text={post.content}
