@@ -5,6 +5,8 @@ from .models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
+    # making the author field show the username instead of the id
+    author = serializers.ReadOnlyField(source='author.username')
     class Meta:
         model = Post
         fields = (
