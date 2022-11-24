@@ -1,6 +1,5 @@
-import React from 'react'
-import './MainCard.css'
-
+import React from "react";
+import "./MainCard.css";
 
 const MainCard = (props) => {
   return (
@@ -15,7 +14,8 @@ const MainCard = (props) => {
           </p>
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default MainCard
+export default MainCard;
