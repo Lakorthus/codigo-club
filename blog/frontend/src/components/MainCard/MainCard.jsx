@@ -12,6 +12,7 @@ const MainCard = (props) => {
 
   return (
     <div className="card main-card">
+
       {/* Mapping through the items, stop after the first item in the array */}
       {items.map((post, index) => {
         if (index === 0) {
@@ -38,5 +39,6 @@ const MainCard = (props) => {
     </div>
   );
 };
+
 
 export default MainCard;
