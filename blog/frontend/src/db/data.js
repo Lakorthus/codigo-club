@@ -4,7 +4,7 @@ export const data =[
       date: "12/12/2020",
       title: "Blog Post 1",
       src: "https://picsum.photos/200/300",
-      text: "Helloooooo World"
+      text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
     },
     {
       author: "John Doe",
@@ -21,6 +21,5 @@ export const data =[
       text: "Helloooooo World",
     }
 ]
-
 
 
