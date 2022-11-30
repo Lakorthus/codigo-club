@@ -3,7 +3,7 @@
   .content {
     top: 0;
     height: 330px;
-    width: 100vw;
+    width: 100%;
     background: #19647e;
     overflow: hidden;
   }
@@ -15,7 +15,8 @@
   .header-text{
     position: relative;
     top: 20%;
-    left: 50%;
+    left: 30%;
+    width: max-content;
     mix-blend-mode: color-dodge;
     transform: translate(-40%, -160%);
   }
@@ -25,6 +26,6 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    line-height: 73px;
+    line-height: 100%;
   }
 }

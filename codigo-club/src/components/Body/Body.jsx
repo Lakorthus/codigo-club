@@ -5,8 +5,8 @@ import Main from './Main/Main'
 function Body() {
   return (
     <div className="">
-        <Header />
         <Main />
+        <Header />
     </div>
   )
 }
