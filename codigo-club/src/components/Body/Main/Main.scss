@@ -1,0 +1,30 @@
+//mobile
+@media (max-width: 768px) {
+  .content {
+    top: 0;
+    height: 330px;
+    width: 100vw;
+    background: #19647e;
+    overflow: hidden;
+  }
+  img {
+    height: 330px;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+  .header-text{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    mix-blend-mode: color-dodge;
+    transform: translate(-40%, -160%);
+  }
+  .brand {
+    color: #DDCECD;
+    font-size: 6.5em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73px;
+  }
+}
