@@ -1,4 +1,7 @@
 .App{
   font-size: 62.5%;
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #19647e;
 }
 
