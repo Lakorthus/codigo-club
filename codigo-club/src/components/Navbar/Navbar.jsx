@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+ 
+} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (
@@ -50,8 +55,7 @@ function Navbar() {
           href="/"
           className="btn btn-ghost normal-case text-3xl text-[#eee5e5] bg-[#37392e] md:text-4xl md:hidden md:navbar-end"
         >
-          {" "}
-          +{" "}
+          <FontAwesomeIcon icon={faBars} />
         </a>
       </div>
     </div>
