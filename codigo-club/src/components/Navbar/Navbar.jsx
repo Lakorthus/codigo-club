@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar md:bg-[#303229] bg-[transparent] absolute w-[97%]">
+    <div className="navbar md:bg-[#303229] bg-[transparent] absolute">
       <div className="flex-1 hidden md:block">
         <a
           href="/"
@@ -24,6 +24,7 @@ function Navbar() {
         >
           Our Projects
         </a>
+        {/* Button + */}
         <a
           href="/"
           className="btn btn-ghost normal-case text-3xl text-[#4AA4B9]"
@@ -41,18 +42,34 @@ function Navbar() {
           >
             Blog
           </a>
-
-          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg> */}
         </button>
       </div>
       <div className="navbar md:hidden justify-end">
-        <a
-          href="/"
-          className="btn btn-ghost normal-case text-3xl text-[#eee5e5] bg-[#37392e] md:text-4xl md:hidden md:navbar-end"
-        >
-          {" "}
-          +{" "}
-        </a>
+        <div className="dropdown z-10">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost normal-case text-3xl text-[#eee5e5] bg-[#37392e] md:text-4xl md:hidden md:navbar-end"
+          >
+            +
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-compact dropdown-content right-2 mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="/">Homepage</a>
+            </li>
+            <li>
+              <a href="about-us">About us</a>
+            </li>
+            <li>
+              <a href="our-projects">Our Projects</a>
+            </li>
+            <li>
+              <a href="blog">Blog</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
