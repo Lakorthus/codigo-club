@@ -1,47 +1,50 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar md:bg-[#303229] bg-[transparent] absolute">
       <div className="flex-1 hidden md:block">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="btn btn-ghost normal-case text-xl text-[#AE62A1]"
         >
           Home
-        </a>
-        <a
-          href="/"
+        </Link>
+      
+        
+        <Link
+          to="/"
           className="btn btn-ghost normal-case text-xl text-[#54A1E3]"
         >
           About us
-        </a>
+        </Link>
 
         {"  "}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="btn btn-ghost normal-case text-xl text-[#E1C515]"
         >
           Our Projects
-        </a>
+        </Link>
         {/* Button + */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="btn btn-ghost normal-case text-3xl text-[#4AA4B9]"
         >
           {" "}
           +{" "}
-        </a>
+        </Link>
       </div>
 
       <div className="flex-none hidden md:block ">
         <button className="btn btn-square btn-ghost">
-          <a
-            href="/"
-            className="btn btn-ghost normal-case text-xl text-[#CC5756]"
-          >
-            Blog
-          </a>
+        <Link to="/blog"
+               className="btn btn-ghost normal-case text-xl text-[#CC5756]"
+                >
+                  Blog
+                  </Link>
+
         </button>
       </div>
       <div className="navbar md:hidden justify-end">
@@ -57,16 +60,16 @@ function Navbar() {
             className="menu menu-compact dropdown-content right-2 mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a href="/">Homepage</a>
+              <Link to="/">Homepage</Link>
             </li>
             <li>
-              <a href="about-us">About us</a>
+              <Link to="about-us">About us</Link>
             </li>
             <li>
-              <a href="our-projects">Our Projects</a>
+              <Link to="our-projects">Our Projects</Link>
             </li>
             <li>
-              <a href="blog">Blog</a>
+              <Link to="blog">Blog</Link>
             </li>
           </ul>
         </div>
