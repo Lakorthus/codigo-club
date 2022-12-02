@@ -4,7 +4,7 @@ import Main from './Main/Main'
 
 function Body() {
   return (
-    <div className="container">
+    <div className="body">
         <Main />
         <Header />
     </div>
