@@ -1,12 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Navbar() {
   return (
-    <div className="navbar md:bg-[#303229] bg-[transparent] absolute">
-      <div className="flex-1 hidden md:block">
-        <Link
+    <div
+      className="
+      navbar bg-[transparent] absolute w-[100%]
+      md:bg-[#303229] md:relative"
+    >
+      <div className="w-[100%] md:flex hidden md:justify-between">
+      <div>
+     <Link
           to="/"
+
           className="btn btn-ghost normal-case text-xl text-[#AE62A1]"
         >
           Home
@@ -34,20 +44,25 @@ function Navbar() {
         >
           {" "}
           +{" "}
-        </Link>
+
+       </Link>
+
+      </div>
+      
+        <div>
+           <Link to="/blog"
+            
+            className="btn btn-ghost normal-case text-xl text-[#CC5756]"
+          >
+            Blog
+           </Link>
+        </div>
+
       </div>
 
-      <div className="flex-none hidden md:block ">
-        <button className="btn btn-square btn-ghost">
-        <Link to="/blog"
-               className="btn btn-ghost normal-case text-xl text-[#CC5756]"
-                >
-                  Blog
-                  </Link>
-
-        </button>
-      </div>
       <div className="navbar md:hidden justify-end">
+      
+//carlos
         <div className="dropdown z-10">
           <label
             tabIndex={0}
@@ -73,6 +88,14 @@ function Navbar() {
             </li>
           </ul>
         </div>
+/*
+        <a
+          href="/"
+          className="btn btn-ghost normal-case text-3xl text-[#eee5e5] bg-[#37392e] md:text-4xl md:hidden md:navbar-end"
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </a>
+*/
       </div>
     </div>
   );

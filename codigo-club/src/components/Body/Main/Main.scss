@@ -1,31 +1,31 @@
-//mobile
-@media (max-width: 768px) {
-  .content {
-    top: 0;
-    height: 350px;
-    width: 100%;
-    background: #19647e;
-    overflow: hidden;
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    cursor: pointer;
+    animation: bounceIn;
+    animation: rubberBand 1s;
+    color: #28AFB0;
+    text-shadow: 2px 2px #19647e;
   }
-  img {
-    height: 350px;
-    object-fit: cover;
-    opacity: 0.4;
-  }
-  .header-text{
-    position: relative;
-    top: 20%;
-    left: 30%;
-    width: max-content;
-    mix-blend-mode: color-dodge;
-    transform: translate(-40%, -160%);
-  }
-  .brand {
-    color: #DDCECD;
-    font-size: 7.8em;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
+}
+
+@for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: calc($i / 10); 
+
   }
 }
