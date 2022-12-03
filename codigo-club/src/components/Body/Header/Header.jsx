@@ -6,16 +6,15 @@ import {
 import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
-import { Social } from "../../utilities/Social/Social";
+import { Social } from "../../../utilities/Social/Social";
 
 function Header() {
   return (
     <div
       className="
-            flex flex-col items-center
+            flex flex-col justify-evenly items-center
             bg-[#19647E] text-[#EEE5E5]
-            font-[inter] min-h-[50vh] w-[100%]
-            py-4 px-2
+            font-[inter] min-h-[50vh] md:min-h-[40vh] w-[100%]
             leading-5 sm:leading-[2.5em] xl:leading-[3em]
             tracking-[0.20em] sm:tracking-[0.28em] md:tracking-[0.35em]
         "
