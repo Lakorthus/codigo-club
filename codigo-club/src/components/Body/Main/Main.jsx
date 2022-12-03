@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../Logo/Logo";
+import Logo from "../../utilities/Logo/Logo";
 import "./Main.scss";
 
 function Main() {
