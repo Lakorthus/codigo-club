@@ -1,15 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
- 
-} from '@fortawesome/free-solid-svg-icons'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
-    <div className="navbar md:bg-[#303229] bg-[transparent] absolute w-[97%]">
-      <div className="flex-1 hidden md:block">
-        <a
+    <div
+      className="
+      navbar bg-[transparent] absolute w-[100%]
+      md:bg-[#303229] md:relative"
+    >
+      <div className="w-[100%] md:flex hidden md:justify-between">
+      <div>
+      <a
           href="/"
           className="btn btn-ghost normal-case text-xl text-[#AE62A1]"
         >
@@ -36,20 +38,19 @@ function Navbar() {
           {" "}
           +{" "}
         </a>
-      </div>
 
-      <div className="flex-none hidden md:block ">
-        <button className="btn btn-square btn-ghost">
+      </div>
+      
+        <div>
           <a
             href="/"
             className="btn btn-ghost normal-case text-xl text-[#CC5756]"
           >
             Blog
           </a>
-
-          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg> */}
-        </button>
+        </div>
       </div>
+
       <div className="navbar md:hidden justify-end">
         <a
           href="/"
