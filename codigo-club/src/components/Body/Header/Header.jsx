@@ -22,7 +22,6 @@ function Header() {
     >
 
 
-
       <div className="flex flex-col justify-center w-[100%] text-right mt-4">
         <h1 className="pr-2 text-[2.2em] sm:text-[2.2em] xl:text-[2.4em] leading-9 ">
           “You might not think that programmers are artists but programming is

@@ -6,7 +6,7 @@ import BlogPage from "./pages/blog";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Body />} />
