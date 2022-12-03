@@ -8,7 +8,7 @@ function Navbar() {
     <div
       className="
       navbar bg-[transparent] absolute w-[100%]
-      md:bg-[#303229] md:relative"
+      md:bg-[#303229] md:fixed md:top-0 md:z-[1000]"
     >
       <div className="w-[100%] md:flex hidden md:justify-between">
         <div>

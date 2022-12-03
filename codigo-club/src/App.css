@@ -3,12 +3,17 @@
   height: 100vh;
   width: 100%;
   top: 0;
-  background-color: #19647e;
+  /* background-color: #19647e; */
 }
 .body{
   width: 100%;
   overflow: hidden;
   top: 0;
+}
+span{
+  color: #eee5e5;
+  text-shadow: -2px -2px 0 #19647e, 0 -2px 5px #19647e,
+    3px 0 0 rgb(31, 70, 162), 7px 0 0 #19647e;
 }
 
 

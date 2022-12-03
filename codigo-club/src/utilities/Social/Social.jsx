@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Social = ({ className, icon }) => {
+const Social = ({ className, icon }) => {
   return (
     <>
       <a href="/">
@@ -10,3 +10,5 @@ export const Social = ({ className, icon }) => {
     </>
   );
 };
+
+export default Social;
