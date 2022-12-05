@@ -4,11 +4,15 @@ import Profiles from "../components/Profiles/Profiles";
 function AboutUs() {
   return (
     <div className="pt-80">
-      <div>
-        If you are going to use a passage of Lorem Ipsum, you need to be sure
-        there isn't anything embarrassing hidden in the middle of text. It uses
-        a dictionary of over 200 Latin words, combined with a handful of model
-        sentence structures, to generate Lorem Ipsum which looks reasonable.
+      <div className="text-lg pl-5 pr-5 text-justify">
+        We are passionate about building beautiful and functional websites that
+        help businesses succeed online. With a team of experienced and skilled
+        web developers, we specialize in creating custom-tailored solutions that
+        meet the unique needs of each of our clients. We believe in using the
+        latest technologies and industry best practices to deliver high-quality
+        websites that drive results. Whether you are looking to launch a new
+        website or redesign an existing one, we can help you achieve your goals.
+        Contact us today to learn more.
       </div>
       <Profiles />
     </div>
