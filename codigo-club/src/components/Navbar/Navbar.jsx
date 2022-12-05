@@ -20,7 +20,7 @@ function Navbar() {
           </Link>
 
           <Link
-            to="/"
+            to="/aboutus"
             className="btn btn-ghost normal-case text-xl text-[#54A1E3]"
           >
             About us
@@ -69,7 +69,7 @@ function Navbar() {
               <Link to="/">Homepage</Link>
             </li>
             <li>
-              <Link to="about-us">About us</Link>
+              <Link to="aboutus">About us</Link>
             </li>
             <li>
               <Link to="our-projects">Our Projects</Link>
