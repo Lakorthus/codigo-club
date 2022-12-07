@@ -1,7 +1,7 @@
 import React from "react";
 
 function Profiles() {
-  return <div>Profiles</div>;
+  return <div className="grid">Profiles</div>;
 }
 
 export default Profiles;
