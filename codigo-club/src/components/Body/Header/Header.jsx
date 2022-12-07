@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import  Social  from "../../../utilities/Social/Social";
 
-function Header() {
+function Header({title,paragraph, className}) {
   return (
     <div
       className="
@@ -21,17 +21,17 @@ function Header() {
     >
 
 
-      <div className="flex flex-col justify-center w-[100%] h-[80%] text-right  px-5 pt-2">
-        <h1 className="pr-2 text-[2.2em] sm:text-[2.2em] xl:text-[2.4em] leading-9 ">
-          “You might not think that programmers are artists but programming is
-          an extremely creative profession. It’s logic-based creativity”
+      <div className="flex flex-col justify-center w-[100%] min-h-[40vh] text-justify  px-3 pt-2">
+        <h1 className={`pr-2 text-[2.2em] sm:text-[2.2em] xl:text-[2.4em] leading-7 ${className}`}>
+        {title}
         </h1>
-        <p className=" pr-8 pt-3  text-[1em] sm:text-[2em] xl:text-[2.4em]">
-          – John Romero
+        <p className="px-2 pt-3 text-[1.5em] sm:text-[2em] xl:text-[2.4em] leading-5 bg">
+          {paragraph}
         </p>
       </div>
 
-      
+
+
       <div className="w-[40%] flex justify-between items-center md:hidden">
         <Social 
           icon={faGithub}
