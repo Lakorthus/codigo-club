@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-
-function Body({children , className}) {
+function Body({ children, className }) {
   return (
     <div className={`body  bg-[#19647e] min-h-[100vh] ${className}`}>
-       {children}
+      {children}
     </div>
-  )
+  );
 }
 
-export default Body
+export default Body;
