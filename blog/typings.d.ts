@@ -68,3 +68,16 @@ interface Title {
   _type: 'string';
   current: string;
 }
+
+export type {
+  Post,
+  Author,
+  Image,
+  Reference,
+  Slug,
+  Block,
+  Span,
+  Category,
+  MainImage,
+  Title,
+};

@@ -1,3 +1,4 @@
+import Banner from '../../Banner';
 import Header from '../../navigation/header/Header';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'body'> {
@@ -9,14 +10,18 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({
   ...bodyProps
 }) => {
   return (
-    <>
-      <body {...bodyProps} className={`max-w-7xl mx-auto bg-[#F6F5DA]`}>
+    <body
+      {...bodyProps}
+      className={`h-screen relative w-full flex-1 flex justify-center items-center bg-[#F6F5DA]`}
+    >
+      <main className="max-w-7xl mx-auto">
+        {/* Header */}
         <Header />
-        <main className="relative w-full flex-1 flex justify-center items-center">
-          {children}
-        </main>
-      </body>
-    </>
+        {/* Banner */}
+        <Banner />
+        {children}
+      </main>
+    </body>
   );
 };
 

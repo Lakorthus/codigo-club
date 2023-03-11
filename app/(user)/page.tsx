@@ -1,11 +1,40 @@
-const Home = () => {
-  return (
-    <section className="yPaddings px-2 mx-auto max-w-screen-md h-screen">
-      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-        Home
-      </h2>
-    </section>
-  );
-};
+import { groq } from 'next-sanity';
+import { previewData } from 'next/headers';
+import BlogList from '../../components/BlogList';
+import PreviewBlogList from '../../components/PreviewBlogList';
+import PreviewSuspense from '../../components/PreviewSuspense';
+import { client } from '../../lib/sanity.client';
 
-export default Home;
+// Querying data from Sanity using groq
+const query = groq`
+  *[_type=='post'] {
+    ...,
+    author->,
+    categories[]->
+  } | order(_createdAt desc)
+`;
+
+export const revalidate = 60; // Revalidate this page every 60 seconds
+
+async function HomePage() {
+  if (previewData()) {
+    return (
+      <PreviewSuspense
+        fallback={
+          <div role="status">
+            <p className="text-center text-lg animate-pulse text-[#F7AB0A]">
+              Loading Preview Data...
+            </p>
+          </div>
+        }
+      >
+        <PreviewBlogList query={query} />
+      </PreviewSuspense>
+    );
+  }
+
+  const posts = await client.fetch(query);
+  return <BlogList posts={posts} />;
+}
+
+export default HomePage;
