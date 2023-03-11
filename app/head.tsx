@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Portfolio</title>
+      <title>Codigo Club | Blog</title>
       <link rel="icon" href="./Google.png" />
     </>
   );

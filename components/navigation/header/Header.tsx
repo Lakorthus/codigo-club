@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AuthButton from '../../buttons/auth/AuthButton';
 
 export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
 
@@ -7,24 +6,22 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   return (
     <header
       {...headerProps}
-      className={`w-full flex flex-row justify-between ${className}`}
+      className={`flex items-center justify-between space-x-2 font-bold px-10 py-5 ${className}`}
     >
-      <div className="space-x-5 m-5">
-        <Link className="hover:underline" href="/">
-          Home
+      <div className="flex items-center space-x-2">
+        <Link href="/">
+          <h1>An Image goes Here</h1>
         </Link>
-        <Link className="hover:underline" href="/">
-          Store
-        </Link>
+        <h1>Lakorthus</h1>
       </div>
-      <div className="space-x-5 m-5">
-        <Link className="hover:underline hidden sm:inline" href="/">
-          Gmail
+
+      <div>
+        <Link
+          href="/"
+          className="px-5 py-3 text-sm md:text-base bg-[#062C80] text-[#F6F5DA] flex items-center rounded-full text-center"
+        >
+          Sign up
         </Link>
-        <Link className="hover:underline hidden sm:inline" href="/">
-          Images
-        </Link>
-        <AuthButton />
       </div>
     </header>
   );
