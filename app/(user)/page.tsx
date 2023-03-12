@@ -1,8 +1,8 @@
 import { groq } from 'next-sanity';
 import { previewData } from 'next/headers';
 import BlogList from '../../components/BlogList';
-import PreviewBlogList from '../../components/PreviewBlogList';
-import PreviewSuspense from '../../components/PreviewSuspense';
+import PreviewBlogList from '../../components/client/PreviewBlogList';
+import PreviewSuspense from '../../components/client/PreviewSuspense';
 import { client } from '../../lib/sanity.client';
 
 // Querying data from Sanity using groq

@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+export interface ILogo {}
+
 const Logo = (props: any) => {
   const { renderDefault } = props;
   return (

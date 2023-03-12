@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Post } from '../blog/typings';
 import urlFor from '../lib/urlFor';
-import ClientSideRoute from './ClientSideRoute';
+import ClientSideRoute from './client/ClientSideRoute';
 
 type Props = {
   posts: Post[];

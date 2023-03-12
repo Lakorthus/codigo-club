@@ -1,4 +1,4 @@
-import Banner from '../../Banner';
+import Banner from '../../navigation/banner/Banner';
 import Header from '../../navigation/header/Header';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'body'> {
