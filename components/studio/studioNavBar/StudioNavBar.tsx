@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-function StudioNavBar(props: any) {
+export interface IStudioNavBar {}
+
+const StudioNavBar: React.FC<IStudioNavBar> = (props: any) => {
   return (
     <div>
       <div className="flex items-center justify-between p-5">
@@ -21,6 +23,6 @@ function StudioNavBar(props: any) {
       <>{props.renderDefault(props)}</>
     </div>
   );
-}
+};
 
 export default StudioNavBar;
