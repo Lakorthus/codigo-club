@@ -1,8 +1,6 @@
 import { IBanner } from './Banner';
 
-const base: IBanner = {
-  sampleTextProp: 'Hello world!',
-};
+const base: IBanner = {};
 
 export const mockBannerProps = {
   base,

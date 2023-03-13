@@ -28,7 +28,7 @@ const base: IBlogList = {
         image: {
           _type: 'image',
           asset: {
-            _ref: 'image-1',
+            _ref: 'image-1234-300x300-png',
             _type: 'reference',
           },
         },
@@ -68,7 +68,7 @@ const base: IBlogList = {
       mainImage: {
         _type: 'image',
         asset: {
-          _ref: 'image-1',
+          _ref: 'image-Google-300x300-png',
           _type: 'reference',
         },
       },

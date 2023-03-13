@@ -1,6 +1,4 @@
-import { IStudioNavBar } from './StudioNavBar';
-
-const base: IStudioNavBar = {};
+const base = {};
 
 export const mockStudioNavBarProps = {
   base,

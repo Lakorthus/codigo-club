@@ -1,6 +1,5 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
-import { AuthProvider } from '../context/auth/AuthContext';
 import '../styles/globals.css';
 
 const BREAKPOINTS_INT = {
@@ -35,13 +34,7 @@ Object.defineProperty(NextImage, 'default', {
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
 
-export const decorators = [
-  (Story) => (
-    <AuthProvider>
-      <Story />
-    </AuthProvider>
-  ),
-];
+export const decorators = [(Story) => <Story />];
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

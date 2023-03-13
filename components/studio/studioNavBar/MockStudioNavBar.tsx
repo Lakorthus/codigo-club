@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export interface IStudioNavBar {}
-
-const StudioNavBar: React.FC<IStudioNavBar> = (props: any) => {
+const mockStudioNavBar: React.FC = () => {
   return (
     <div>
       <div className="flex items-center justify-between p-5">
@@ -21,9 +19,8 @@ const StudioNavBar: React.FC<IStudioNavBar> = (props: any) => {
           Subscribe
         </Link>
       </div>
-      {props.renderDefault(props)}
     </div>
   );
 };
 
-export default StudioNavBar;
+export default mockStudioNavBar;
