@@ -1,9 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import urlFor from "../lib/urlFor";
+import Image from 'next/image';
+import Link from 'next/link';
+import urlFor from '../../lib/urlFor';
 
-export const RichTextComponents = {
+const RichTextComponents = {
   // Defining the types
   types: {
     image: ({ value }: any) => {
@@ -14,7 +13,7 @@ export const RichTextComponents = {
             src={urlFor(value).url()}
             alt="Blog Post Image"
             fill
-            sizes={"(max-width: 640px) 100vw, 640px"}
+            sizes={'(max-width: 640px) 100vw, 640px'}
           />
         </div>
       );
@@ -22,11 +21,11 @@ export const RichTextComponents = {
     code: ({ value }: any) => (
       <pre
         className="bg-gray-800 text-white p-5 rounded-md"
-        style={{ whiteSpace: "pre-wrap" }}
+        style={{ whiteSpace: 'pre-wrap' }}
       >
         {/* Showing the language */}
         <code className="text-[#4FB9FC] font-bold text-xl">
-          {value.language ? value.language : ""}
+          {value.language ? value.language : ''}
         </code>
         <br />
         {/* Showing the code */}
@@ -64,8 +63,8 @@ export const RichTextComponents = {
   },
   marks: {
     link: ({ children, value }: any) => {
-      const rel = !value.href.startsWith("/")
-        ? "noreferrer noopener"
+      const rel = !value.href.startsWith('/')
+        ? 'noreferrer noopener'
         : undefined;
       return (
         <Link
@@ -79,3 +78,5 @@ export const RichTextComponents = {
     },
   },
 };
+
+export default RichTextComponents;
